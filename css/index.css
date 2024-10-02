@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','serif';
+}
+.container{
+    max-width: 1440px;
+    max-height: 2000px;
+    margin: 0 auto;
+    /* border: 1px solid #000000; */
+}
+nav{
+    background-color: #C6FDE3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+.nav-con{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #8F3232; */
+    padding: 10px 60px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #8F3232;
+    align-items: center;
+    
+    & a{
+        text-decoration: none !important;
+        color: #8F3232;
+    }
+
+}
+.menu {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+}
+
+.menu li a{
+    text-decoration: none;
+    margin: 0 30px;
+    color: #000000; 
+}
+.menu li a:hover{
+    color: #8F3232;
+    border-bottom: 2px solid #8F3232;
+    transition: .5s initial;
+}
+
+.login-btn{ 
+    
+    & button{
+        width: 100px;   
+        height: 40px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        cursor:pointer;
+        font-weight: 500;
+        border: none;
+        box-shadow: 1px 1px 4px rgba(104, 226, 196, 0.25);
+        font-size: 1.1rem;
+
+        &:hover{
+            background-color: #dddddd;
+            transform: scale(1.1);
+            transition: .5s ease-out;
+
+        }
+    }
+ } 
+
+.user-profile{
+    display: none;
+    background-color: #F5F5F5;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+/* Overview */
+.overview{
+    padding: 16px 12px;
+}
+
+.overview-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-box h4{
+    font-weight: bold;
+    font-size: 32px;
+    margin: 10px 0;
+}
+.overview-box img{
+    padding: 42px 64px;
+}
+.overview-text-box{
+    width: 540px;
+    font-size: 20px;
+}
+/* Feature */
+.feature{
+    padding: 16px 12px;
+}
+
+.feature-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C6FDE3;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.feature-box h4{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.feature-box img{
+    padding: 42px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.feature-text-box{
+    padding: 0 0 0 30px;
+    width: 540px;
+    height: 390px;
+    font-size: 20px;
+    color: #000000;
+
+
+}
+
+.feature-list{
+    margin: 10px 0;
+    padding-left: 20px;
+    width: 540px;
+}
+/* Conversation */
+.conversation{
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conver-box{
+    width: 740px;
+}
+.conver-box h4{
+    font-weight: bold;
+    font-size: 28px;
+    margin: 10px 0;
+}
+.conver-box h5{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+
+.conver-box p{
+    margin: 10px 0;
+}
+.conver-list{
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.img-head h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 16px 12px;
+    
+}
+
+.img-description p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 12px 16px;
+}
+
+.img-box{
+    display: flex;
+    gap: 14px;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px;
+
+    & .img-card1{
+        display: flex;
+        cursor: pointer;
+        opacity: 0.9;
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease-out;
+            opacity: 1;
+
+        }
+    }
+    
+    & .img-card2{
+        cursor: pointer;
+        opacity: 0.9;
+
+        &:hover{           
+            transform: scale(1.05);
+            transition: 0.3s ease-out;
+            opacity: 1;
+
+        }
+    }
+
+    & .img-card3{
+        cursor: pointer;
+        opacity: 0.9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease-out;
+            opacity: 1;
+
+        }
+    }
+
+    & .img-card4{
+        cursor: pointer;
+        border-radius: 10px;
+        width: 340px;
+        height: 440px;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.9;
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease-out;
+            opacity: 1;
+
+        }
+    }
+}
+/* End of img-box */

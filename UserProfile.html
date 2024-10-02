@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserProfile</title>
+    <link rel="stylesheet" href="css/UserProfile.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="profile-form" id="profile-form">
+            <div class="profile-header">
+                <h1>Profile</h1>
+            </div>
+            <ul>
+                <div id="user-profile" class="user-profile">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <label class="edit-label-user" for="user">Username:</label>
+                <input class="edit-User" id="edit-User" type="text" required disabled>
+
+                <label class="edit-label-email" for="email">Email:</label>
+                <input class="edit-Email" id="edit-Email" type="email" required disabled>
+
+                <label class="edit-label-telNo" for="tel">TelNumber:</label>
+                <input class="edit-Tel" id="edit-Tel" type="tel" required disabled>
+
+                <label class="edit-label-status" for="status">Status:</label>
+                <input class="edit-Status" id="edit-Status" type="text" required disabled>
+
+                <div class="back">
+                    <a href="index.html"><span>
+                            <</span>Back </a>
+                </div>
+
+                    <button class="signout" id="logout-btn" type="submit">Sign Out</button>
+
+                    <button  class="edit-btn" id="edit-btn" type="button">Edit Profile</button>
+
+                <button id="save-btn" class="save-btn" type="submit">SaveChange</button>
+                <button id="cancel-btn" class="cancel-btn" type="submit">Cancel</button>
+            </ul>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

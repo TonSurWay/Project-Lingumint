@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Regular';
+    
+}
+.contrainer{  
+    max-width: 1440px;
+    margin: auto;
+}
+.Lingumint {
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    color: #8F3232;
+    display: flex;
+    letter-spacing: -0.43px;
+    line-height: 22px;
+    margin: 50px 0 0 0;
+    font-size: 64px;
+
+}
+
+.welcome {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #000000;
+    margin: 14px 0 0 0;
+    letter-spacing: -0.43px;
+    line-height: 22px;
+    font-size: 36px;
+
+}
+
+.login-form{
+    position: relative;
+    width: 860px;
+    height: 600px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    background: #C6FDE3;
+    border-radius: 10px;
+
+    
+    /* Email field*/
+    & .email{
+        position: absolute;
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        top: 120px;
+        transform: translateY(-50%);
+        padding: 0 10px;
+        outline: none;
+        border: 1px solid #dddddd;
+
+        &:focus:valid{
+            border: 1px solid #3fa803;
+        }
+        &:focus:invalid{
+            border: 1px solid #f01515;
+        }
+
+    }
+
+    /* password field*/
+    & .password{
+        position: absolute;
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        top: 214px;
+        transform: translateY(10%);
+        padding: 0 10px;
+        outline: none;
+        border: 1px solid #dddddd;
+
+        &:focus:valid{
+            border: 1px solid #3fa803;
+        }
+        &:focus:invalid{
+            border: 1px solid #f01515;
+        }
+    }
+
+    /* email label*/
+    & .mail {
+        position: absolute;
+        top: 70px;
+        transform: translateX(4%);
+        left: 130px;
+        font-size: 16px;
+    }
+
+    /* password field*/
+    & .pass{
+        position: absolute;
+        top: 190px;
+        transform: translateX(4%);
+        left: 130px;
+        font-size: 16px;
+    }
+
+    & p {
+        position: absolute;
+        top: 540px;
+    
+        & a{
+            color: #2885EE;
+            margin-left: 5px;
+            text-decoration: underline;
+
+            &:hover{
+                color: #66a1ee;
+                transition: 0.3s ease-in-out;
+            }
+        }
+        
+    }
+
+    
+
+    & .back a{
+        position: absolute;
+        top: 565px;
+        transform: translateX(10%);
+        right: 30px;
+        color: #2885EE;
+        text-decoration: none;
+
+        &:hover{
+            color: #66a1ee;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+} /* end of form-box */
+
+/* forgot password */
+.forgot{
+    position: absolute;
+    top: 260px;
+    transform: translateX(190%);
+    font-size: 14px;
+    color: #2885EE;
+    &:hover{
+        color: #66a1ee;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.loggedin{
+    position: absolute;
+    top: 328px;
+    width: 140px;  
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+}
+.loggedin:hover{
+    background-color: #dddddd;
+    transition: .3s ease;
+}
+
+.line{
+    position: absolute;
+    width: 860px;
+    height: 0px;
+    transform: translateY(100%);
+    top: 400px; 
+    border-bottom: 1px solid #000000;
+
+    & p{
+        position: absolute;
+        top: -11px;
+        transform: translateX(2250%);
+        background-color: #C6FDE3;
+    }
+
+} /* End of line */
+
+.social-login-btn{
+    position: absolute;
+    top: 460px;
+    text-align: center;
+    
+    & .google{
+        position: absolute;
+        transform: translateX(-120%);
+        display: inline-block;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 260px;
+        height: 50px;
+        text-decoration: none;
+        padding:12px 0;
+        color: #000000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    & .google:hover{
+        background-color: #dddddd;
+        transition: .3s ease;
+    }
+
+    & .apple{
+        position: absolute;
+        transform: translateX(20%);
+        display: inline-block;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 260px;
+        height: 50px;
+        text-decoration: none;
+        padding:12px 0;
+        color: #000000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    & .apple:hover{
+        background-color: #dddddd;
+        transition: .3s ease;
+    }
+
+    
+} /* End of social-login-btn*/
+
+
+
+
+
